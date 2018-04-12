@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    android:scaleType="fitXY"
+android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.singhster.gaurav.eatit.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#79000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hunger  Go"
+        android:textSize="35dp"
+        android:layout_centerInParent="true"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="31dp"
+        android:paddingRight="31dp"
+        android:textColor="#ffffff"
+        android:textSize="21dp"
+
+        android:text="Dont wait in line\n    order online"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="#79000000"
+        >
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:buttonColor="#3b796c"
+            android:layout_weight="1"
+            android:text="Sign in"
+            android:id="@+id/button_signup"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            app:shadowColor="#000000"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"
+            />
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="sign up"
+            android:id="@+id/button_login"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            app:shadowColor="#000000"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+          app:buttonColor="#aad341"
+            app:cornerRadius="4dp"
+            />
+    </LinearLayout>
+</LinearLayout>
